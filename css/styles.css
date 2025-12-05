@@ -210,11 +210,13 @@ h3 {
     background: #ffd6e8;
 }
 
-.grid-card img {
-    max-width: 180px;
+.grid-card img,
+.service-card img {
     width: 100%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 12px;
-    margin-bottom: 15px;
+    display: block;
 }
 
 /* SERVICES PAGE */
@@ -236,6 +238,9 @@ h3 {
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    min-height: 360px;
 }
 
 .service-card:hover {
@@ -246,6 +251,28 @@ h3 {
 .service-card .icon {
     font-size: 3.5rem;
     margin-bottom: 15px;
+}
+
+.service-card .icon,
+.service-card img {
+    height: 180px;
+    min-height: 180px;
+    max-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.service-card h3,
+.services-grid h3 {
+    margin: 14px 0 12px;
+    line-height: 1.1;
 }
 
 /* CONTACT & FAQ  */
