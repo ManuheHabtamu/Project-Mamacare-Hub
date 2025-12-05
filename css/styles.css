@@ -1,9 +1,3 @@
-/* ========================================
-   MAMACARE HUB – FINAL CSS (JS-Powered Mobile Menu)
-   100% working on mobile + desktop
-   Logo left | Nav right | Beautiful everywhere
-   ======================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 * {
@@ -19,20 +13,20 @@ body {
     line-height: 1.6;
 }
 
-/* ==================== NAVIGATION ==================== */
+/* NAVIGATION */
 nav {
     background: #fff0f5;
     padding: 15px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* ensure nav is a single row with logo left and items right */
+/* ensure nav */
 nav {
     display: flex;
     align-items: center;
@@ -54,7 +48,6 @@ nav {
     transform: scale(1.1);
 }
 
-/* nav list: logo must be first <li> inside .nav-links */
 .nav-links {
     display: flex;
     align-items: center;
@@ -70,20 +63,17 @@ nav {
     white-space: nowrap;
 }
 
-/* keep logo on the left, push other nav items to the far right */
 .nav-links li:first-child {
     margin-right: auto;
 }
 
-/* ensure logo keeps its size & doesn't wrap */
 .logo {
     display: inline-block;
-    width: 50px; /* keep or adjust to your preferred size */
+    width: 50px;
     height: 50px;
     z-index: 2;
 }
 
-/* keep nav items vertically centered */
 .nav-links {
     align-items: center;
 }
@@ -125,23 +115,38 @@ nav {
     transition: all 0.3s;
 }
 
-/* ==================== GENERAL STYLES ==================== */
+/* GENERAL STYLES */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-section { padding: 60px 0; }
+section {
+    padding: 60px 0;
+}
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: purple;
     text-align: center;
 }
 
-h1 { font-size: 2.5rem; margin-bottom: 20px; }
-h2 { font-size: 2rem; margin-bottom: 20px; }
-h3 { font-size: 1.4rem; margin: 15px 0 10px; }
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+}
 
 .btn {
     display: inline-block;
@@ -159,7 +164,7 @@ h3 { font-size: 1.4rem; margin: 15px 0 10px; }
     transform: translateY(-3px);
 }
 
-/* ==================== HOME PAGE ==================== */
+/* HOME PAGE */
 .hero {
     background: #fff0f5;
     padding: 80px 0;
@@ -174,7 +179,10 @@ h3 { font-size: 1.4rem; margin: 15px 0 10px; }
     padding: 0 20px;
 }
 
-.hero-text { flex: 1; }
+.hero-text {
+    flex: 1;
+}
+
 .hero-image img {
     max-width: 420px;
     width: 100%;
@@ -193,7 +201,7 @@ h3 { font-size: 1.4rem; margin: 15px 0 10px; }
     padding: 25px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s;
 }
 
@@ -209,7 +217,7 @@ h3 { font-size: 1.4rem; margin: 15px 0 10px; }
     margin-bottom: 15px;
 }
 
-/* ==================== SERVICES PAGE ==================== */
+/* SERVICES PAGE */
 .services-section {
     background: linear-gradient(135deg, #ffe6f0 0%, #fff0f5 100%);
 }
@@ -226,13 +234,13 @@ h3 { font-size: 1.4rem; margin: 15px 0 10px; }
     padding: 40px 20px;
     border-radius: 16px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.3s;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(216,27,96,0.15);
+    box-shadow: 0 20px 40px rgba(216, 27, 96, 0.15);
 }
 
 .service-card .icon {
@@ -240,8 +248,9 @@ h3 { font-size: 1.4rem; margin: 15px 0 10px; }
     margin-bottom: 15px;
 }
 
-/* ==================== CONTACT & FAQ ==================== */
-.contact-section, .faq-section {
+/* CONTACT & FAQ  */
+.contact-section,
+.faq-section {
     background: #fff0f5;
     border-radius: 15px;
     margin: 40px auto;
@@ -259,24 +268,32 @@ h3 { font-size: 1.4rem; margin: 15px 0 10px; }
 
 
 @media (max-width: 820px) {
-    .contact-container { gap: 18px; }
+    .contact-container {
+        gap: 18px;
+    }
 }
 
 .contact-info {
     background: #fff5f8;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
 
-.contact-info h2 { margin-bottom: 12px; }
-.contact-info p { margin-bottom: 8px; color: #333; }
+.contact-info h2 {
+    margin-bottom: 12px;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    color: #333;
+}
 
 .contact-form {
     background: #fff;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
 
 .contact-form label {
@@ -354,16 +371,18 @@ summary {
     text-align: center;
     margin-top: 40px;
     font-size: 1.1rem;
-    
+
 }
 
 .finalp a {
     color: purple;
     font-weight: 600;
 }
+
 .finalp-home a:hover {
     color: #ff1493;
 }
+
 .finalp-home {
     text-align: center;
     background: #ffe6f0;
@@ -385,7 +404,7 @@ footer {
 @media screen and (max-width: 768px) {
     nav {
         padding: 10px 12px;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         gap: 8px 0;
     }
 
@@ -398,12 +417,12 @@ footer {
     .nav-links {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
         gap: 8px 12px;
         justify-content: flex-end;
         align-items: center;
         width: auto;
-        margin-left: auto;          
+        margin-left: auto;
         padding: 4px 0;
     }
 
@@ -419,7 +438,7 @@ footer {
 
     .search-box {
         min-width: 140px;
-        flex: 1 1 140px; 
+        flex: 1 1 140px;
         max-width: 180px;
     }
 
@@ -429,6 +448,7 @@ footer {
         padding: 8px 14px;
     }
 }
+
 /* For very small screens */
 @media screen and (max-width: 480px) {
     .nav-links {
@@ -493,13 +513,18 @@ footer {
         font-size: 1rem;
     }
 
-    .search-box { width: 100%; margin-top: 10px; }
-    nav { padding: 10px 12px; }
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav {
+        padding: 10px 12px;
+    }
 }
 
-/* Accessibility / focus states */
 .contact-form input:focus,
 .contact-form textarea:focus {
-    box-shadow: 0 0 0 3px rgba(122,30,166,0.12);
+    box-shadow: 0 0 0 3px rgba(122, 30, 166, 0.12);
     border-color: #7a1ea6;
 }
