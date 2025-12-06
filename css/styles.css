@@ -332,8 +332,6 @@ footer {
     box-shadow: 0 0 0 3px rgba(122, 30, 166, .12);
     border-color: #7a1ea6
 }
-
-
 @media screen and (max-width:768px) {
     nav {
         padding: 10px 12px;
@@ -466,4 +464,22 @@ footer {
         max-width: 260px;
         width: 72%
     }
+    .container {
+        padding-left: 0;
+        padding-right: 0
+    }
+    .faq-section.full-bleed, .contact-section.full-bleed {
+        max-width: 100%;
+        margin: 0;
+        padding: 18px 12px;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+    .faq-grid {
+        padding-left: 0;
+        padding-right: 0;
+        gap: 16px
+    }
 }
+
+
